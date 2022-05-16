@@ -16,6 +16,7 @@ pipeline{
                 sh 'git checkout main'
                 sh 'git pull origin main'
 //                 sh 'cd aneksingh00'
+                sh 'ls'
                 sh 'cd node-demo'
             }
         }
