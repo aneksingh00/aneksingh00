@@ -7,6 +7,7 @@ pipeline {
     stage('Git') {
       steps {
         git branch: 'main', url: 'https://github.com/aneksingh00/aneksingh00.git'
+        sh 'ls -la'
       }
     }
      
@@ -20,7 +21,7 @@ pipeline {
             
     stage('Test') {
       steps {
-        sh 'node start'
+        sh 'npm run start'
       }
     }
   }
