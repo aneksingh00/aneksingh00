@@ -10,7 +10,7 @@ pipeline {
               sh 'ls'
                 sh 'pwd'
               sh 'npm install'
-              sh 'npm run start'
+              sh 'npm start'
             }
         }       
   }
