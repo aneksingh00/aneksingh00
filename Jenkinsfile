@@ -10,7 +10,8 @@ pipeline{
                 stage("git clone"){
             steps{
             sh 'git clone https://github.com/aneksingh00/aneksingh00.git'
-                sh 'cd node-semo'
+                sh 'ls'
+                sh 'cd node-demo'
             }
         }
         stage("npm install"){
