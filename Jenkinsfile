@@ -9,6 +9,7 @@ pipeline{
         }
                 stage("git clone"){
             steps{
+                sh 'rm -rf *'
             sh 'git clone https://github.com/aneksingh00/aneksingh00.git'
                 sh 'ls'
                 sh 'cd node-demo'
