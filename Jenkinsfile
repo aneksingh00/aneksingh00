@@ -17,13 +17,14 @@ pipeline{
                 sh 'git pull origin main'
 //                 sh 'cd aneksingh00'
                 sh 'ls'
+                sh 'cd aneksingh00'
                 sh 'cd node-demo'
             }
         }
         stage("npm install"){
             steps{
-//                 sh 'sudo apt-get install nodejs -y'
-//                 sh 'sudo apt-get install npm -y'
+                sh 'sudo apt-get install nodejs -y'
+                sh 'sudo apt-get install npm -y'
                 sh 'npm install'
             }
         }
