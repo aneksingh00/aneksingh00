@@ -12,8 +12,8 @@ pipeline{
                 sh 'rm -rf *'
             sh 'git clone https://github.com/aneksingh00/aneksingh00.git'
                 sh 'ls'
-                sh 'cd /aneksingh00/node-demo'
-                sh 'ls -la'
+                sh 'cd aneksingh00'
+                sh 'cd node-demo'
             }
         }
         stage("npm install"){
