@@ -6,7 +6,7 @@ pipeline {
         
     stage('Git') {
       steps {
-        git branch: 'main', url: 'https://github.com/aneksingh00/aneksingh00.git'
+        git branch: 'master', url: 'https://github.com/aneksingh00/aneksingh00.git'
         sh 'ls -la'
       }
     }
