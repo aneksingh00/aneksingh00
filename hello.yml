@@ -1,33 +1,6 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  labels:
-    app: nginx-1
-  managedFields:
-  - apiVersion: apps/v1
-    spec:
-      containers:
-      - image: us-west1-docker.pkg.dev/crested-sentry-328210/hello-repo/hello@sha256:3f24e7bace7abe1195c545e0021aba82d9699e2467e34cbe8445ef109659ecd3
-        imagePullPolicy: IfNotPresent
-        name: hello-sha256-1
-        resources: {}
-        terminationMessagePath: /dev/termination-log
-        terminationMessagePolicy: File
-      dnsPolicy: ClusterFirst
-      restartPolicy: Always
-      schedulerName: default-scheduler
-      securityContext: {}
-      terminationGracePeriodSeconds: 30
-network:
-forwarded_ports:
-- 8080:8080
-automatic_scaling:
-  min_num_instances: 1
-  max_num_instances: 10
-  cool_down_period_sec: 120 # default value
-  cpu_utilization:
-  target_utilization: 0.5
-resources:
-  cpu: 1
-  memory_gb: 2
-  disk_size_gb: 10
+version: '3'
+services:
+    hello:
+        image: docker pull anek2000/node-demo:hello
+        ports:
+          -	8081:8080
