@@ -7,6 +7,12 @@ pipeline{
                 sh 'pwd'
             }
         }
+                stage("git clone"){
+            steps{
+            sh 'git clone https://github.com/aneksingh00/aneksingh00.git'
+                sh 'cd node-semo'
+            }
+        }
         stage("npm install"){
             steps{
 //                 sh 'sudo apt-get install nodejs -y'
@@ -16,7 +22,7 @@ pipeline{
         }
         stage("npm build"){
             steps{
-              sh 'cd node-semo'
+              
               sh 'node server.js'
             }
         }
