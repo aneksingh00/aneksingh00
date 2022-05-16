@@ -3,7 +3,12 @@ pipeline {
 
     
   stages {
-        
+         stage("SSH to remote server"){
+            steps{
+                sh 'gcloud compute ssh node-server-1 --zone us-central1-a'
+                sh 'pwd'
+            }
+        }       
     stage('Git') {
       steps {
         git branch: 'master', url: 'https://github.com/aneksingh00/aneksingh00.git'
