@@ -14,7 +14,7 @@ pipeline{
                 sh 'ls'
                 sh "git branch -a"
                 sh 'git checkout main'
-                sh 'cd aneksingh00'
+//                 sh 'cd aneksingh00'
                 sh 'cd node-demo'
             }
         }
