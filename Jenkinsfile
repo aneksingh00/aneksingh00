@@ -13,6 +13,7 @@ pipeline{
             sh 'git clone https://github.com/aneksingh00/aneksingh00.git'
                 sh 'ls'
                 sh "git branch -a"
+                sh 'git checkout main'
                 sh 'cd aneksingh00'
                 sh 'cd node-demo'
             }
