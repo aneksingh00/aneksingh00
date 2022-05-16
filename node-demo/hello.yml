@@ -1,6 +1,0 @@
-version: '3'
-services:
-    hello:
-        image: docker pull anek2000/node-demo:hello
-        ports:
-          -	8081:8080
