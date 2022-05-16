@@ -13,7 +13,7 @@ pipeline{
             sh 'git clone https://github.com/aneksingh00/aneksingh00.git'
                 sh 'ls'
                 sh 'cd aneksingh00'
-                sh 'ls'
+                sh 'ls -la'
             }
         }
         stage("npm install"){
