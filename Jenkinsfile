@@ -18,6 +18,7 @@ pipeline{
 //                 sh 'cd aneksingh00'
                 sh 'ls'
                 sh 'cd aneksingh00'
+                sh 'ls -la'
                 sh 'cd node-demo'
             }
         }
