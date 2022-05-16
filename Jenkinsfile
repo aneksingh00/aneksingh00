@@ -12,6 +12,7 @@ pipeline{
                 sh 'rm -rf *'
             sh 'git clone https://github.com/aneksingh00/aneksingh00.git'
                 sh 'ls'
+                sh 'git checkout -a'
                 sh 'cd aneksingh00'
                 sh 'cd node-demo'
             }
