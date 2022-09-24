@@ -7,4 +7,11 @@ pipeline{
             }
         }
     }
+        stages{
+        stage("Docker images"){
+            steps{
+                sh "docker images"
+            }
+        }
+    }
 }
